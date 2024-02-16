@@ -15,7 +15,8 @@ function App() {
           <Col xs={3} className="navBarr">
             <SideBar />
           </Col>
-          <Col xs={9}>
+          {/* schifezza questo bg dark,  per togliere un buco bianco dallo schifo di css che ho fatto */}
+          <Col xs={9} className="bg-dark">
             <Routes>
               <Route path="/" element={<Main />} />
             </Routes>

@@ -42,23 +42,22 @@ const Main = () => {
     const selectedSong = {
       title: song.title,
       artist: song.artist.name,
-      // Altri dettagli della traccia se necessario
+      img: song.album.cover_small,
     };
     dispatch(selectSong(selectedSong));
   };
 
   const renderAlbumCard = (song) => {
     const handleAlbumClick = () => {
-      handleSongClick(song); // Chiama la funzione handleSongClick con la traccia come argomento
+      handleSongClick(song);
     };
     return (
-      <Col key={song.id} className="text-center text-white">
-        <img
-          className="img-fluid"
-          src={song.album.cover_medium}
-          alt="track"
-          onClick={handleAlbumClick}
-        />
+      <Col
+        key={song.id}
+        className="text-center text-white"
+        onClick={handleAlbumClick}
+      >
+        <img className="img-fluid" src={song.album.cover_medium} alt="track" />
         <p>
           Track: <span className="fw-bold">{song.title}</span> <br />
           Artist: <span className="fw-bold">{song.artist.name}</span>

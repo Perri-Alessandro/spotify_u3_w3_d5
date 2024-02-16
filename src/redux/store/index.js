@@ -1,4 +1,4 @@
-import { configureStore, combineReducers } from "@reduxjs/toolkit"; // Modifica l'importazione
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import selectedSongReducer from "../reducers/select";
 
 const globalReducer = combineReducers({

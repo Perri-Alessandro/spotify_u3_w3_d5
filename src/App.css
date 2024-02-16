@@ -60,6 +60,10 @@ div > .progress {
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
 .navBarr {
   padding: 0;
   background-color: black;
@@ -67,4 +71,9 @@ div > .progress {
 
 .mainLinks {
   font-size: 13px;
+}
+
+.textSelected > div > h2,
+.textSelected > div > p {
+  font-size: 0.75em;
 }
