@@ -43,6 +43,7 @@ const Main = () => {
       title: song.title,
       artist: song.artist.name,
       img: song.album.cover_small,
+      mp3: song.preview,
     };
     dispatch(selectSong(selectedSong));
   };
